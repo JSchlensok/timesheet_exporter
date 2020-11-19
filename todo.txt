@@ -1,0 +1,34 @@
+* Add pip install command for all required packages
+* add config file
+* add way to insert holidays
+* if >10h worktime: limit for the day and remove breaks elsewhere to compensate
+* add flags
+	* turning off Excel preview (e.g. on Linux)
+	* custom email message
+	* custom config file path
+	* progress printing
+* catch PermissionError (=file is still open in Excel)
+* Generalize holidays from one to multiple months, add option to do whole months, between certain days, or between first and last workday of sheet
+* Re-order methods
+* standardize sheet indexing: index-based iteration -> iter_rows/cols and .cell() -. []
+* automatically close Excel
+* recognize which columns are in export from the first CSV line and only work on those
+
+Timesheet.generateBorders()
+* What if args contains something other than borders' keys? -> raise error
+
+Timesheet.save()
+* add option to specify output folder
+
+Timesheet.confirm()
+* make confirmation wait for Excel opening up
+
+Timesheet.setOutputName()
+* add cases for different years/months
+* add options for different elements in output (through kwargs, and/or a string specifying the order of elements similar to strptime)
+	* month#-month# vs. date-date -> a similar mechanism would be required for fetchHolidays!
+* add option for leading 0 in month numbers
+* make 'Arbeitszeit' configurable
+
+Holidays
+* fetch days named "Urlaub" from Exchange calendar automatically
