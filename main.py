@@ -36,11 +36,11 @@ headers_german = ["Datum", "Anfang", "Ende", "anwesend", "Pausen", "gearbeitet",
 weekly_worktime = "15:00"
 
 # Email
-sender_email = "julius.schlensok@mitsm.de"
-receiver_email = "office@mitsm.de"
-email_body = "Dies ist eine automatisierte Email, an die Julius' Arbeitszeit angehängt wird. Probleme/Feedback bitte an feedback@schlensok.org"
-smtp_server = "smtp.office365.com"
-name = "Julius Schlensok"
+sender_email = ""
+receiver_email = ""
+email_body = ""
+smtp_server = ""
+name = ""
 
 ###############
 # DEFINITIONS #
